@@ -4,7 +4,7 @@ import "../CSS/NamesList.css";
 
 function NamesList({ onPostFinished }) {
 
-    const [input, SetInput] = useState("Jeppe");
+    const [input, SetInput] = useState("");
 
     async function SendInput() {
         // POST to backend
