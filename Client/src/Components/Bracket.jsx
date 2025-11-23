@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { createElement, useEffect, useState } from "react";
+import "../CSS/Bracket.css"
 
 function Bracket({ refreshTrigger }) {
 
@@ -8,6 +9,7 @@ function Bracket({ refreshTrigger }) {
     async function loadData() {
       const res = await fetch("http://localhost:5000/submit");
       const data = await res.json();
+      console.log(data[1]);
       setEntries(data);
     }
 
@@ -16,8 +18,11 @@ function Bracket({ refreshTrigger }) {
 
   return (
     <div>
+      <dir>{entries.length}</dir>
       {entries.map((data, index) => (
-        <div key={index}>{data}</div>
+        createElement("button",{className: "entry", key: index},
+          "Test"//<button  class="entry" key={index}>{data}</button>
+        )
       ))}
     </div>
   );

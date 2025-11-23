@@ -7,9 +7,8 @@ let processedArray = []
 router.post("/", async (req, res) => {
     try{
         const data = await req.body.userInput
-        console.log("Text");
-        console.log(data.text);
-        processedArray = data.text.split(",").map(item => item.trim());
+        processedArray = data.text.split("\n").map(item => item.trim());
+        console.log(processedArray);
         res.json({ message: "Data processed" });
         
         

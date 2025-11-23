@@ -8,7 +8,6 @@ import Bracket from './Components/Bracket.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1>Bracket creator</h1>
     <App></App>
   </StrictMode>,
 )
