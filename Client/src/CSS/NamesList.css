@@ -1,0 +1,12 @@
+#input_box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+
+}
+
+#submit_button{
+    display: flex;
+    margin: auto;
+}
