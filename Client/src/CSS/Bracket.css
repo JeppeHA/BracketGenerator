@@ -1,4 +1,8 @@
-.entry{
-    display: flex;
-    margin: auto;
+.entry {
+  display: flex;
+  margin: auto;
+}
+
+#bracket {
+  display: flex;
 }
